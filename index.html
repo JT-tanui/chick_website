@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Mania - Your Delightful Chicken Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav>
+        <img src="Assets/Images/logo.png" alt="Chicken Mania Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Menu</a></li>
+            <li><a href="#blogs">Specials</a></li>
+            <li><a href="#information">Data</a><li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="join.html"><button id="loginButton">Join us</button></a></li> 
+            <!-- Button to trigger login -->
+        </ul>
+    </nav>
+
+    <!-- Homepage with Image and Text Overlay -->
+    <section id="home" style="background: url('Assets/Images/chicken.png') center/cover no-repeat;">
+        <div id="welcome-text">
+            Welcome to <span class="highlight">Chicken</span> Mania
+        </div>
+        <div id="short-text">
+            Your delightful destination for mouth-watering chicken dishes!
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services">
+        <div class="service-card">
+            <img src="Assets/Images/fried.png" alt="Chicken Dish 1">
+            <h3>Delicious Fried Chicken</h3>
+            <p>A crispy and flavorful delight that will satisfy your taste buds.</p>
+            <p class="price">$9.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="service-card">
+            <img src="Assets/Images/grilled.png" alt="Chicken Dish 2">
+            <h3>Grilled Chicken Skewers</h3>
+            <p>Healthy and savory skewers that bring a burst of flavors.</p>
+            <p class="price">$12.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="service-card">
+            <img src="Assets/Images/spicy.png" alt="Chicken Dish 3">
+            <h3>Spicy Chicken Wings</h3>
+            <p>Get ready for a spicy kick with our mouth-watering chicken wings.</p>
+            <p class="price">$8.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="service-card">
+            <img src="Assets/Images/alfredo.png" alt="Chicken Dish 4">
+            <h3>Chicken Alfredo Pasta</h3>
+            <p>Indulge in a creamy and satisfying chicken alfredo pasta dish.</p>
+            <p class="price">$14.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </section>
+    <!--information page-->
+    <section id="information">
+        <div class="information-container">
+            <h2>Breeds of Chicken</h2>
+            <table>
+                <tr>
+                    <th>Chicken breeds</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                </tr>
+                <tr>
+                    <td>Polish Chicken</td>
+                    <td>Polish chicken, known for its rich taste, is a delightful breed that brings a touch of tradition to poultry dishes.</td>
+                    <td><img src="Assets/Images/polish.png" alt="Polish Chicken" width="100"></td>
+                </tr>
+                <tr>
+                    <td>Rhode island Red</td>
+                    <td>Rhode Island Red chickens are renowned for their robust nature and excellent egg-laying abilities. With their deep red feathers, these birds contribute to both backyard charm and a steady supply of fresh, brown eggs.</td>
+                    <td><img src="Assets/Images/Rhode.png" alt="Rhode Chicken"width="100"></td>
+                </tr>
+                <tr>
+                    <td>White Sussex</td>
+                    <td> Sussex chickens are prized for their versatility in the kitchen, offering tender and succulent meat for a variety of delightful recipes</td>
+                    <td><img src="Assets/Images/white.png" alt="white Chicken"width="100"></td>
+                </tr>
+                <tr>
+                    <td>Japaneeze Bantam</td>
+                    <td>Japanese Bantams are small, ornamental chickens known for their distinctive appearance and friendly demeanor. Their compact size, unique feather patterns, and gentle nature make them popular choices for backyard enthusiasts and poultry fanciers alike.</td>
+                    <td><img src="Assets/Images/japan.png" alt="Japan chicken"width="100"></td>
+                </tr>
+                <tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Blog Page Content -->
+    <section id="blogs">
+        <article class="blog-post">
+            <h2>The Enigma of the Unseen</h2>
+            <p>Discover the mysteries that lie beyond the visible horizon.Welcome to a culinary escapade where we unravel the enigma of chicken flavors! Join us on a journey through the tantalizing world of chicken dishes, exploring the magical allure hidden within each delectable bite.</p>
+            <p class="surprise"> 🥳Uncover the hidden truth within!</p>
+        </article>
+    </section>
+<!-- Contact Page Section -->
+<section id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>For inquiries, feel free to reach out:</p>
+            <ul>
+                <li>Email: imoanrut@gmail.com</li>
+                <li>Phone: 0703273578</li>
+                <li>WhatsApp: 076783925</li>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Chicken Mania</h2>
+            <p>Explore the secrets beyond what you can see</p>
+            <p>Come to a tasty adventure with us as we uncover the mystery of chicken flavors</p>
+            <p>Travel through the world of delicious chicken dises and discover the magic in every bite</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Chicken Mania. All Rights Reserved.</p>
+    </footer>
+<!-- JavaScript to handle the login button click -->
+<script>
+    document.getElementById("loginButton").addEventListener("click", function () {
+        var loginSection = document.getElementById("login");
+        if (loginSection.style.display === "none" || loginSection.style.display === "") {
+            loginSection.style.display = "block";
+        } else {
+            loginSection.style.display = "none";
+        }
+    });
+</script>
+</body>
+</html>

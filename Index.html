@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDACC Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var username = document.getElementById("username").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+    
+            // Validate password and confirm password
+            if (password !== confirmPassword || password.length < 6) {
+                alert("Passwords do not match or are too short (min length: 6 characters)");
+                return false;
+            }
+
+            // Validate username length
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters long");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h3>Want to go back home <a href="../index.html">Homepage</a></h3>
+    <form action="process.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <button type="submit">Submit</button>
+        <h4>I already have an account <a href="login.html">Log in </a></h4>
+    </form>
+</body>
+</html>
